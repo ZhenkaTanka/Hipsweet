@@ -1,0 +1,120 @@
+.to-order__block {
+    max-width: 845px;
+    margin: 0 auto;
+    background-image: url(../img/content/bg-form.png);
+    min-height: 180px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.to-order__block-title {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.to-order__title {
+    color: white;
+    font-family: "Malina";
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.to-order__block-form {
+    width: 50%;
+    background-color: rgba(#1d1d20, 0.84);
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+
+.to-order__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.to-order__input-text {
+    margin-top: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    outline: none;
+    color: white;
+    
+    &:focus {
+        border-color: #ffb100;
+    }
+}
+
+.to-order__input-checkbox {
+    display: none;
+}
+
+.to-order__label-checkbox {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.to-order__label-checkbox-check {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 2px;
+    border: 1px solid #2b0c08;
+    position: relative;
+    
+    &::after {
+        content: '';
+        display: none;
+        position: absolute;
+        width: 5px;
+        height: 10px;
+        border: 2px solid #2b0c08;
+        border-top: none;
+        border-left: none;
+        transform: rotateZ(30deg);
+        top: 50%;
+        margin-top: -9px;
+        left: 50%;
+        margin-left: -3px;
+    }
+}
+
+.to-order__input-checkbox:checked + .to-order__label-checkbox-check::after {
+    display: block;
+}
+
+.to-order__submit {
+    @include no-text();
+    width: 96px;
+    height: 96px;
+    background-color: #ffb100;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(../img/icons/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    
+    &:hover {
+        background-color: #ffd577;
+        background-position: 25px center;
+    }
+}

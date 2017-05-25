@@ -1,0 +1,120 @@
+.our-team {
+    background-image: radial-gradient(circle at center center, #fafcfc 0%, #dbdcdc 100%);
+    padding-top: 85px;
+    padding-bottom: 100px;
+}
+
+.our-team__wrapper {
+    @include container();
+}
+
+.our-team__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.our-team__header-block-title {
+    max-width: 340px;
+}
+
+.our-team__header-block-tabs {
+    max-width: 740px;
+}
+
+.our-team__header-title {
+    color: #2b2f60;
+    font-family: "Malina";
+    font-size: 62px;
+    font-weight: 400;
+}
+
+.our-team__cook-list {
+    display: flex;
+}
+
+.our-team__cook-item {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    max-width: 230px;
+    box-sizing: border-box;
+    
+    label {
+        cursor: pointer;
+    }
+    
+    &_active {
+        background-color: #893213;
+        border-radius: 20px;
+        
+        .our-team__cook-name {
+            color: $orange;
+        }
+        
+        .our-team__cook-position {
+            color: white;
+        }
+    }
+}
+
+.our-team__cook-name {
+    color: #2b2f60;
+    font-family: "Malina";
+    font-size: 30px;
+}
+
+.our-team__cook-position {
+    color: #8d8d8d;
+    line-height: 30px;
+}
+
+.our-team__content {
+    display: flex;
+}
+
+.our-team__cook-left {
+    max-width: 270px;
+}
+
+.our-team__cook-right {
+    max-width: 340px;
+}
+
+.our-team__cook-desc {
+    font-size: 14px;
+    line-height: 21px;
+    color: #747474;
+    font-weight: 400;
+    font-style: italic;
+    
+    &_bold {
+        font-weight: 700;
+        color: #484848;
+    }
+}
+
+.our-team__cook-center {
+    display: flex;
+    align-items: flex-end;
+    max-width: 525px;
+    position: relative;
+    
+    &::before {
+        content: '"';
+        position: absolute;
+        font-family: "Cambria";
+        font-weight: 700;
+        font-style: italic;
+        color: #dedede;
+        font-size: 124px;
+        left: 20%;
+        top: 0;
+    }
+}
+
+.our-team__cook-photo {
+    max-width: 100%;
+    display: block;
+}

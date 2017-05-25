@@ -1,0 +1,54 @@
+.slider {
+    position: relative;
+}
+
+.slider__background-text {
+    font-family: "Malina";
+    font-size: 150px;
+    opacity: 0.1;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider__input-radio {
+    display: none;
+}
+
+.slider__label {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    cursor: pointer;
+    &:not(:last-of-type) {
+        margin-right: 30px;
+    }
+    
+    &:hover {
+        background-color: $orange;
+    }
+}
+
+.slider__label_circle {
+    border-radius: 50%;
+}
+
+.slider__navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+input[id="slide1"]:checked ~ .slider__navigation > label[for="slide1"],
+input[id="slide2"]:checked ~ .slider__navigation > label[for="slide2"],
+input[id="slide3"]:checked ~ .slider__navigation > label[for="slide3"],
+input[id="slide4"]:checked ~ .slider__navigation > label[for="slide4"],
+input[id="slide5"]:checked ~ .slider__navigation > label[for="slide5"],
+input[id="slide6"]:checked ~ .slider__navigation > label[for="slide6"]{
+    background-color: #e57100;
+}

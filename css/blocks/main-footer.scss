@@ -1,0 +1,21 @@
+.main-footer {
+    padding-top: 23px;
+    padding-bottom: 40px;
+}
+
+.main-footer__wrapper {
+    @include container();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-footer__copyright {
+    font-size: 14px;
+    color: #8d8d8d;
+}
+
+.main-footer__address {
+    font-size: 14px;
+    color: #8d8d8d;
+}

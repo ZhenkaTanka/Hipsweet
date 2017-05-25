@@ -1,0 +1,11 @@
+.main-header {
+    background-image: linear-gradient(to right, #d2373b 0% , #a3151b 100%);
+}
+
+.main-header__wrapper {
+    @include container();
+}
+
+.main-header__slider {
+    padding-bottom: 30px;
+}

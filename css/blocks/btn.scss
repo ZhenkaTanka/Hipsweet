@@ -1,0 +1,17 @@
+.btn {
+    color: #a4151c;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: $orange;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: #641a00;
+        color: $orange;
+    }
+}

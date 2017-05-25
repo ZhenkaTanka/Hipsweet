@@ -1,0 +1,1386 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background-color: white; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #393939; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Malina";
+  src: url("../fonts/malina.ttf") format("truetype"), url("../fonts/malina.woff") format("woff"), url("../fonts/malina.woff2") format("woff2"); }
+
+.slider {
+  position: relative; }
+
+.slider__background-text {
+  font-family: "Malina";
+  font-size: 150px;
+  opacity: 0.1;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.slider__input-radio {
+  display: none; }
+
+.slider__label {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  cursor: pointer; }
+  .slider__label:not(:last-of-type) {
+    margin-right: 30px; }
+  .slider__label:hover {
+    background-color: #fca211; }
+
+.slider__label_circle {
+  border-radius: 50%; }
+
+.slider__navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+input[id="slide1"]:checked ~ .slider__navigation > label[for="slide1"],
+input[id="slide2"]:checked ~ .slider__navigation > label[for="slide2"],
+input[id="slide3"]:checked ~ .slider__navigation > label[for="slide3"],
+input[id="slide4"]:checked ~ .slider__navigation > label[for="slide4"],
+input[id="slide5"]:checked ~ .slider__navigation > label[for="slide5"],
+input[id="slide6"]:checked ~ .slider__navigation > label[for="slide6"] {
+  background-color: #e57100; }
+
+.logo__link {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none; }
+
+.logo__link-img {
+  max-height: 66px;
+  margin-right: 20px; }
+
+.logo__link-hipsweet {
+  font-family: "Malina";
+  color: #fca211;
+  font-size: 35px;
+  line-height: 70px; }
+
+.socials__link {
+  text-indent: 1000%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/icons/social/facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.49; }
+  .socials__link_fb {
+    background-image: url(../img/icons/social/facebook.png); }
+  .socials__link_inst {
+    background-image: url(../img/icons/social/instagram.png); }
+  .socials__link_ok {
+    background-image: url(../img/icons/social/ok.png); }
+  .socials__link_tw {
+    background-image: url(../img/icons/social/twitter.png); }
+  .socials__link_vk {
+    background-image: url(../img/icons/social/vkontakte.png); }
+  .socials__link_fb:hover {
+    background-image: url(../img/icons/social/facebook-hover.png); }
+  .socials__link_inst:hover {
+    background-image: url(../img/icons/social/instagram-hover.png); }
+  .socials__link_ok:hover {
+    background-image: url(../img/icons/social/ok-hover.png); }
+  .socials__link_tw:hover {
+    background-image: url(../img/icons/social/twitter-hover.png); }
+  .socials__link_vk:hover {
+    background-image: url(../img/icons/social/vkontakte-hover.png); }
+
+.socials__list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.socials__item {
+  margin-left: 20px; }
+
+.tabs__input {
+  display: none; }
+
+.btn {
+  color: #a4151c;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fca211;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 20px;
+  text-decoration: none; }
+  .btn:hover {
+    background-color: #641a00;
+    color: #fca211; }
+
+.main-header {
+  background-image: linear-gradient(to right, #d2373b 0%, #a3151b 100%); }
+
+.main-header__wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main-header__slider {
+  padding-bottom: 30px; }
+
+.main-footer {
+  padding-top: 23px;
+  padding-bottom: 40px; }
+
+.main-footer__wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.main-footer__copyright {
+  font-size: 14px;
+  color: #8d8d8d; }
+
+.main-footer__address {
+  font-size: 14px;
+  color: #8d8d8d; }
+
+.main-navigation {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.main-navigation__logo {
+  padding-left: 23px; }
+
+.main-navigation__main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 520px;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.main-navigation__item {
+  position: relative; }
+  .main-navigation__item:hover .main-navigation__link {
+    color: #fca211; }
+    .main-navigation__item:hover .main-navigation__link_dropdown::after {
+      border-color: #fca211;
+      -webkit-transform: rotateZ(225deg);
+      -ms-transform: rotate(225deg);
+      transform: rotateZ(225deg); }
+
+.main-navigation__dropdown-inner {
+  display: none;
+  padding-top: 25px;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 2; }
+  .main-navigation__dropdown-inner::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -15px;
+    border: 15px solid rgba(255, 255, 255, 0.93);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    -webkit-transform: rotateZ(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotateZ(45deg); }
+  .main-navigation__dropdown-inner:hover {
+    display: block; }
+
+.main-navigation__dropdown-list {
+  width: 225px;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.main-navigation__dropdown-item {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.main-navigation__dropdown-link {
+  color: #575757;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+  text-decoration: none; }
+  .main-navigation__dropdown-link:hover {
+    color: #303030;
+    font-weight: 700; }
+    .main-navigation__dropdown-link:hover::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: #fca211;
+      -webkit-transform: rotatez(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotatez(45deg);
+      top: 0;
+      left: -8px; }
+
+.main-navigation__user {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.main-navigation__link {
+  color: white;
+  line-height: 23px;
+  text-decoration: none; }
+  .main-navigation__link_dropdown {
+    padding-right: 20px;
+    position: relative; }
+    .main-navigation__link_dropdown::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border: 1px solid white;
+      -webkit-transform: rotateZ(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotateZ(45deg);
+      border-left: none;
+      border-top: none;
+      top: 50%;
+      right: 0;
+      margin-top: -4px; }
+
+.main-navigation__item:hover > .main-navigation__dropdown-inner {
+  display: block; }
+
+.main-navigation__user-item {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 20px; }
+
+.main-navigation__user-link {
+  text-indent: 1000%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: relative; }
+  .main-navigation__user-link:hover {
+    background-color: #fca211; }
+
+.main-navigation__user-icon {
+  background-repeat: no-repeat;
+  background-position: center; }
+  .main-navigation__user-icon_cabinet {
+    background-image: url(../img/icons/room.png); }
+  .main-navigation__user-icon_search {
+    background-image: url(../img/icons/search.png); }
+
+.sweets-slider__item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.sweets-slider__item-left {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 130px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.sweets-slider__item-right {
+  max-width: 410px; }
+
+.sweets-slider__ingredients {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.sweets-slider__ingredients-link {
+  text-indent: 1000%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url(../img/icons/ingredients.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 18px; }
+  .sweets-slider__ingredients-link:hover {
+    background-color: #fca211; }
+
+.sweets-slider__ingredients-text {
+  color: white;
+  font-size: 15px; }
+
+.sweets-slider__ingredients-dropdown-list {
+  display: none;
+  min-width: 380px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding-left: 35px;
+  padding-right: 45px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  left: 100%;
+  top: -110%; }
+  .sweets-slider__ingredients-dropdown-list::after {
+    content: '';
+    position: absolute;
+    border: 20px solid rgba(255, 255, 255, 0.92);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    left: 0;
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-left: -20px;
+    margin-top: -20px; }
+
+.sweets-slider__ingredients:hover > .sweets-slider__ingredients-dropdown-list {
+  display: block; }
+
+.sweets-slider__ingredients-dropdown-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 40px; }
+  .sweets-slider__ingredients-dropdown-item-icon::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/icons/eggs.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    left: 0;
+    top: 50%;
+    margin-top: -13px; }
+  .sweets-slider__ingredients-dropdown-item-icon_flour::before {
+    background-image: url(../img/icons/flour.png); }
+  .sweets-slider__ingredients-dropdown-item-icon_eggs::before {
+    background-image: url(../img/icons/eggs.png); }
+  .sweets-slider__ingredients-dropdown-item-icon_sugar::before {
+    background-image: url(../img/icons/sugar.png); }
+  .sweets-slider__ingredients-dropdown-item-icon_oil::before {
+    background-image: url(../img/icons/oil.png); }
+  .sweets-slider__ingredients-dropdown-item-icon_milk::before {
+    background-image: url(../img/icons/milk.png); }
+
+.sweets-slider__ingredients-dropdown-item-name {
+  min-width: 200px;
+  font-size: 16px;
+  color: #575757;
+  line-height: 20px; }
+
+.sweets-slider__ingredients-dropdown-item-value {
+  min-width: 60px;
+  font-size: 16px;
+  color: #575757;
+  line-height: 20px;
+  margin-right: auto; }
+
+.sweets-slider__best-before {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.sweets-slider__best-before-title {
+  opacity: 0.28;
+  color: white;
+  font-size: 13px; }
+
+.sweets-slider__best-before-date {
+  font-family: "Malina";
+  font-size: 24px;
+  color: white;
+  font-weight: 400; }
+
+.sweets-slider__img {
+  max-height: 435px; }
+
+.sweets-slider__title {
+  font-family: "Malina";
+  font-size: 62px;
+  color: white;
+  font-weight: 400; }
+
+.sweets-slider__desc {
+  font-size: 15px;
+  color: white;
+  line-height: 21px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.sweets-slider__price {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.sweets-slider__price-value {
+  font-family: "Malina";
+  font-size: 62px;
+  color: white;
+  font-weight: 400;
+  margin-right: 30px; }
+
+.sweets-slider__price-btn {
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px); }
+
+.why-so-tasty {
+  padding-top: 50px;
+  background-image: linear-gradient(to right, #c9c8c8 0%, #dededd 100%); }
+
+.why-so-tasty__wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.why-so-tasty__info {
+  max-width: 600px;
+  margin-top: 60px; }
+
+.why-so-tasty__cook {
+  max-width: 400px; }
+
+.why-so-tasty__title {
+  font-family: "Malina";
+  color: #2b2f5f;
+  font-size: 62px;
+  font-weight: 400; }
+
+.why-so-tasty__desc {
+  max-width: 405px;
+  font-size: 15px;
+  color: #747474;
+  line-height: 22px;
+  margin-top: 30px;
+  margin-bottom: 60px; }
+
+.why-so-tasty__list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 100px; }
+
+.why-so-tasty__item {
+  max-width: 150px;
+  margin-bottom: 20px;
+  margin-right: 30px; }
+
+.why-so-tasty__item-img {
+  display: block;
+  position: relative;
+  width: 107px;
+  height: 107px;
+  background-color: rgba(43, 47, 96, 0.1);
+  border-radius: 50%; }
+  .why-so-tasty__item-img::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 128px;
+    height: 128px;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .why-so-tasty__item-img_cap::after {
+    background-image: url(../img/content/cap.png); }
+  .why-so-tasty__item-img_foliage::after {
+    background-image: url(../img/content/foliage.png); }
+  .why-so-tasty__item-img_heart::after {
+    background-image: url(../img/content/heart.png); }
+
+.why-so-tasty__item-title {
+  display: block;
+  font-family: "Malina";
+  font-size: 16px;
+  font-weight: 400;
+  color: #747474;
+  margin-top: 30px; }
+
+.why-so-tasty__cook {
+  max-width: 393px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.why-so-tasty__cook-photo {
+  display: block;
+  max-width: 100%; }
+
+.we-supply {
+  background-image: url(../img/pattern.jpg);
+  background-repeat: repeat; }
+
+.we-supply__bg-color {
+  background-color: rgba(254, 180, 15, 0.9);
+  padding-top: 70px;
+  padding-bottom: 40px; }
+
+.we-supply__wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.we-supply__header-title {
+  font-family: "Malina";
+  font-size: 62px;
+  color: #393939;
+  font-weight: 400; }
+
+.we-supply__header {
+  max-width: 825px;
+  text-align: center;
+  margin: 0 auto; }
+
+.we-supply__header-desc {
+  color: #883213;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center; }
+
+.we-supply__list {
+  margin-top: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.we-supply__item {
+  max-width: 275px;
+  text-align: center;
+  margin-bottom: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box; }
+
+.we-supply__photo {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto; }
+
+.we-supply__photo-img {
+  max-width: 100%; }
+
+.we-supply__item-title {
+  font-family: "Malina";
+  font-size: 32px;
+  line-height: 56px;
+  color: #393939;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.we-supply__item-desc {
+  font-size: 14px;
+  color: #ab594a;
+  line-height: 21px;
+  margin: 0; }
+
+.our-team {
+  background-image: radial-gradient(circle at center center, #fafcfc 0%, #dbdcdc 100%);
+  padding-top: 85px;
+  padding-bottom: 100px; }
+
+.our-team__wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.our-team__header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 60px; }
+
+.our-team__header-block-title {
+  max-width: 340px; }
+
+.our-team__header-block-tabs {
+  max-width: 740px; }
+
+.our-team__header-title {
+  color: #2b2f60;
+  font-family: "Malina";
+  font-size: 62px;
+  font-weight: 400; }
+
+.our-team__cook-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.our-team__cook-item {
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  max-width: 230px;
+  box-sizing: border-box; }
+  .our-team__cook-item label {
+    cursor: pointer; }
+  .our-team__cook-item_active {
+    background-color: #893213;
+    border-radius: 20px; }
+    .our-team__cook-item_active .our-team__cook-name {
+      color: #fca211; }
+    .our-team__cook-item_active .our-team__cook-position {
+      color: white; }
+
+.our-team__cook-name {
+  color: #2b2f60;
+  font-family: "Malina";
+  font-size: 30px; }
+
+.our-team__cook-position {
+  color: #8d8d8d;
+  line-height: 30px; }
+
+.our-team__content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.our-team__cook-left {
+  max-width: 270px; }
+
+.our-team__cook-right {
+  max-width: 340px; }
+
+.our-team__cook-desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #747474;
+  font-weight: 400;
+  font-style: italic; }
+  .our-team__cook-desc_bold {
+    font-weight: 700;
+    color: #484848; }
+
+.our-team__cook-center {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  max-width: 525px;
+  position: relative; }
+  .our-team__cook-center::before {
+    content: '"';
+    position: absolute;
+    font-family: "Cambria";
+    font-weight: 700;
+    font-style: italic;
+    color: #dedede;
+    font-size: 124px;
+    left: 20%;
+    top: 0; }
+
+.our-team__cook-photo {
+  max-width: 100%;
+  display: block; }
+
+.to-order__block {
+  max-width: 845px;
+  margin: 0 auto;
+  background-image: url(../img/content/bg-form.png);
+  min-height: 180px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px; }
+
+.to-order__block-title {
+  width: 50%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.to-order__title {
+  color: white;
+  font-family: "Malina";
+  font-size: 64px;
+  font-weight: 400; }
+
+.to-order__block-form {
+  width: 50%;
+  background-color: rgba(29, 29, 32, 0.84);
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative; }
+
+.to-order__form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.to-order__input-text {
+  margin-top: 25px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  outline: none;
+  color: white; }
+  .to-order__input-text:focus {
+    border-color: #ffb100; }
+
+.to-order__input-checkbox {
+  display: none; }
+
+.to-order__label-checkbox {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer; }
+
+.to-order__label-checkbox-check {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-color: white;
+  margin-right: 10px;
+  border-radius: 2px;
+  border: 1px solid #2b0c08;
+  position: relative; }
+  .to-order__label-checkbox-check::after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border: 2px solid #2b0c08;
+    border-top: none;
+    border-left: none;
+    -webkit-transform: rotateZ(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotateZ(30deg);
+    top: 50%;
+    margin-top: -9px;
+    left: 50%;
+    margin-left: -3px; }
+
+.to-order__input-checkbox:checked + .to-order__label-checkbox-check::after {
+  display: block; }
+
+.to-order__submit {
+  text-indent: 1000%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 96px;
+  height: 96px;
+  background-color: #ffb100;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(../img/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -40px;
+  right: -40px; }
+  .to-order__submit:hover {
+    background-color: #ffd577;
+    background-position: 25px center; }
+
+.faq {
+  background-image: url(../img/content/bg-faq.png);
+  background-size: cover;
+  background-position: top center;
+  color: white; }
+
+.faq__bg-color {
+  background-color: rgba(219, 61, 65, 0.9); }
+
+.faq__wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 100px; }
+
+.faq__header {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.faq__list {
+  margin-left: 70px; }
+
+.faq__item {
+  margin-bottom: 40px; }
+
+.faq__header-title {
+  font-family: "Malina";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 81px; }
+
+.faq__question {
+  font-size: 22px;
+  line-height: 34px;
+  cursor: pointer; }
+  .faq__question_active {
+    color: #fca211; }
+    .faq__question_active .faq__question-border {
+      border: none; }
+  .faq__question-border {
+    border-bottom: 2px dashed white;
+    font-weight: 400; }
+
+.faq__block-answer {
+  margin-left: 70px; }
+
+.faq__answer {
+  font-size: 15px;
+  line-height: 21px; }
+
+.map {
+  max-height: 535px; }
+  .map iframe {
+    height: 535px;
+    width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
