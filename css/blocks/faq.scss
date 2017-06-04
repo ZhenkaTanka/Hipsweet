@@ -56,10 +56,17 @@
 }
 
 .faq__block-answer {
+    display: none;
     margin-left: 70px;
+    
+    &_active {
+        display: block;
+    }
 }
 
 .faq__answer {
     font-size: 15px;
     line-height: 21px;
+    
+    
 }
