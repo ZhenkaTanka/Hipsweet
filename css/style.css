@@ -525,6 +525,11 @@ input[id="slide6"]:checked ~ .slider__navigation > label[for="slide6"] {
 .tabs__input {
   display: none; }
 
+.tabs__content-item {
+  display: none; }
+  .tabs__content-item_active {
+    display: block; }
+
 .btn {
   color: #a4151c;
   font-size: 14px;
@@ -1137,10 +1142,6 @@ input[id="slide6"]:checked ~ .slider__navigation > label[for="slide6"] {
   display: flex; }
 
 .our-team__cook-item {
-  padding-top: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 20px;
   max-width: 230px;
   box-sizing: border-box; }
   .our-team__cook-item label {
@@ -1152,6 +1153,14 @@ input[id="slide6"]:checked ~ .slider__navigation > label[for="slide6"] {
       color: #fca211; }
     .our-team__cook-item_active .our-team__cook-position {
       color: white; }
+
+.our-team__cook-item-link {
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px; }
 
 .our-team__cook-name {
   color: #2b2f60;
@@ -1165,7 +1174,10 @@ input[id="slide6"]:checked ~ .slider__navigation > label[for="slide6"] {
 .our-team__content {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .our-team__cook-left {
   max-width: 270px; }
@@ -1371,7 +1383,10 @@ input[id="slide6"]:checked ~ .slider__navigation > label[for="slide6"] {
     font-weight: 400; }
 
 .faq__block-answer {
+  display: none;
   margin-left: 70px; }
+  .faq__block-answer_active {
+    display: block; }
 
 .faq__answer {
   font-size: 15px;
